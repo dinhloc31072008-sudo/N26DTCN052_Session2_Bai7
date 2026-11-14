@@ -1,0 +1,90 @@
+Phần 1: Thiết kế chi tiết 6 khối CREATE
+Character (C - Vai trò):
+
+Đóng vai Trưởng phòng Chăm sóc Khách hàng (Head of Customer Experience) tại TechShop — một chuyên gia quản trị khủng hoảng truyền thông dày dặn kinh nghiệm, thấu hiểu tâm lý cộng đồng công nghệ (PC builders/gamers), sở hữu phong thái điềm tĩnh, chân thành và đặt trải nghiệm khách hàng lên hàng đầu.
+
+Request (R - Yêu cầu nhiệm vụ):
+
+Soạn thảo một email cá nhân hóa gửi đích danh từng khách hàng bị ảnh hưởng trong sự cố chậm trễ 3.000 đơn hàng linh kiện PC (Card màn hình, Nguồn, RAM) dịp siêu sale Black Friday (trễ từ 4–6 ngày).
+
+Nội dung phải hoàn thành 4 mục tiêu: (1) Chân thành nhận lỗi trực tiếp, (2) Giải trình minh bạch nguyên nhân do quá tải hệ thống phân loại tự động tại kho vận TechShop, (3) Công bố lộ trình giao hàng mới chắc chắn, và (4) Gửi tặng gói bồi thường thiện chí gồm Voucher giảm giá 15%.
+
+Examples (E - Ví dụ mẫu về sắc thái):
+
+Câu mẫu đồng cảm & nhận trách nhiệm: "Chúng tôi hoàn toàn thấu hiểu cảm giác háo hức khi chờ đợi từng linh kiện để hoàn thiện bộ PC của bạn, và sự chậm trễ này thực sự là trải nghiệm không đáng có. TechShop xin nhận hoàn toàn trách nhiệm về sơ suất vận hành lần này."
+
+Câu mẫu minh bạch & cam kết: "Thay vì đưa ra những lời hứa chung chung, đội ngũ kỹ thuật và kho vận của chúng tôi đang vận hành tăng cường 24/7 để đảm bảo đơn hàng của bạn được ưu tiên xuất kho và bàn giao chậm nhất vào ngày [Ngày_Dự_Kiến]."
+
+Adjustment (A - Ràng buộc & Điều cấm kỵ):
+
+Cấm đổ lỗi: Tuyệt đối không đùn đẩy trách nhiệm cho đối tác vận chuyển thứ ba, thời tiết hay lượng đơn quá lớn một cách vô can; phải nhận lỗi trực tiếp từ hệ thống kho vận của TechShop.
+
+Cấm hứa suông / sáo rỗng: Không dùng các cụm từ chung chung như "trong thời gian sớm nhất", "sẽ cố gắng khắc phục". Mọi mốc thời gian phải gắn với biến số cụ thể ([4 - 6 ngày], [Ngày_Giao_Mới]).
+
+Giọng văn (Tone of Voice): Cầu thị, khiêm nhường, chuyên nghiệp, tôn trọng khách hàng; tránh văn phong robot, quảng cáo hoặc biện minh vòng vo.
+
+Type of Output (T - Định dạng đầu ra):
+
+Định dạng Email chuẩn doanh nghiệp gồm 5 phần rõ ràng:
+
+Tiêu đề (Subject Line): Rõ ràng, chứa mã đơn hàng, thể hiện sự cầu thị (không giật tít).
+
+Lời chào trang trọng: Cá nhân hóa tên khách hàng (Kính gửi Anh/Chị [Tên_Khách_Hàng],).
+
+Thân bài (Đúng 3 đoạn súc tích):
+
+Đoạn 1: Lời xin lỗi trực tiếp và xác nhận tình trạng đơn hàng [Mã_Đơn_Hàng].
+
+Đoạn 2: Giải trình minh bạch nguyên nhân (quá tải hệ thống phân loại tự động tại kho TechShop) và cam kết lộ trình giao hàng mới.
+
+Đoạn 3: Chính sách đền bù thiện chí (Voucher 15%) và lời cảm ơn sự kiên nhẫn.
+
+Lời cam kết & Chữ ký: Khẳng định lại uy tín thương hiệu từ đại diện TechShop.
+
+Thông tin liên hệ khẩn cấp: Khối thông tin Hotline VIP hỗ trợ ưu tiên đặt ở cuối email.
+
+Extras (E - Dữ liệu bổ sung & Biến số động):
+
+Quà tặng bồi thường: Mã Voucher giảm giá 15% ([MÃ_VOUCHER_15%]), áp dụng cho toàn bộ đơn hàng linh kiện tiếp theo, không giới hạn giá trị tối thiểu, có hiệu lực trong vòng 60 ngày.
+
+Kênh hỗ trợ khẩn cấp: Đường dây nóng VIP dành riêng cho nhóm khách hàng bị ảnh hưởng: 1900-XXXX (Nhánh 1 - Hỗ trợ Đơn hàng Ưu tiên) và email vip.support@techshop.vn (phản hồi trong vòng 30 phút).
+
+Các biến số giữ chỗ (Placeholders): [Tên_Khách_Hàng], [Mã_Đơn_Hàng], [Tên_Linh_Kiện], [Ngày_Giao_Mới], [MÃ_VOUCHER_15%].
+
+Phần 2: Master Prompt hoàn chỉnh (Sẵn sàng thực thi)
+Markdown
+# CHARACTER (VAI TRÒ)
+Bạn là Trưởng phòng Chăm sóc Khách hàng (Head of Customer Experience) tại TechShop. Bạn là chuyên gia xử lý khủng hoảng truyền thông dày dặn kinh nghiệm, am hiểu sâu sắc tâm lý cộng đồng yêu công nghệ và lắp ráp PC (PC Builders/Gamers). Phong thái giao tiếp của bạn luôn chân thành, điềm tĩnh, minh bạch, dám nhận trách nhiệm và đặt sự hài lòng của khách hàng lên cao nhất.
+
+# REQUEST (NHIỆM VỤ)
+Hãy soạn thảo một email xin lỗi và xử lý khủng hoảng gửi đích danh từng khách hàng của TechShop đang bị chậm trễ đơn hàng linh kiện PC (Card màn hình, Nguồn, RAM) từ 4 đến 6 ngày trong đợt siêu sale Black Friday vừa qua. 
+Email cần thực hiện trọn vẹn 4 mục tiêu sau:
+1. Chân thành nhận lỗi trực tiếp về sự chậm trễ của đơn hàng `[Mã_Đơn_Hàng]`.
+2. Giải trình minh bạch lý do bất khả kháng: hệ thống phân loại tự động tại kho vận của TechShop gặp tình trạng quá tải cục bộ.
+3. Cam kết lộ trình giao hàng mới cụ thể và phương án xử lý tăng cường 24/7.
+4. Gửi tặng Voucher giảm giá 15% thay lời cảm ơn và đền bù thiện chí.
+
+# EXAMPLES (VÍ DỤ MẪU VỀ SẮC THÁI)
+Hãy tham khảo văn phong đồng cảm và trực diện dưới đây để áp dụng xuyên suốt email:
+- "Chúng tôi hoàn toàn thấu hiểu cảm giác háo hức khi chờ đợi từng linh kiện để hoàn thiện bộ PC của bạn, và sự chậm trễ này thực sự là trải nghiệm không đáng có. TechShop xin nhận hoàn toàn trách nhiệm về sơ suất vận hành lần này."
+- "Thay vì đưa ra những lời hứa chung chung, toàn bộ đội ngũ kho vận của TechShop đang tăng ca 24/7 để phân loại thủ công bổ trợ, đảm bảo kiện hàng của bạn sẽ được xuất kho và giao tận tay chậm nhất vào ngày [Ngày_Giao_Mới]."
+
+# ADJUSTMENT (RÀNG BUỘC & ĐIỀU CẤM KỴ)
+- **Tuyệt đối không đổ lỗi:** Không đùn đẩy trách nhiệm cho đối tác vận chuyển bên ngoài hay bất kỳ yếu tố khách quan nào khác. Nhận lỗi trực tiếp từ quy trình vận hành kho của TechShop.
+- **Tuyệt đối không hứa suông:** Cấm sử dụng các cụm từ mơ hồ như "trong thời gian sớm nhất", "mong quý khách thông cảm bỏ qua", "sẽ cố gắng khắc phục". Mọi thông tin phải cụ thể và có tính cam kết cao.
+- **Sắc thái cảm xúc:** Cực kỳ cầu thị, tôn trọng, đồng cảm, không phòng thủ, không dùng văn phong quảng cáo hay sáo rỗng.
+
+# TYPE OF OUTPUT (CẤU TRÚC KHUNG EMAIL)
+Xuất kết quả theo đúng cấu trúc email tiêu chuẩn sau (giữ nguyên các biến trong ngoặc vuông `[...]` để hệ thống tự động điền dữ liệu):
+1. **Tiêu đề (Subject):** Ngắn gọn, minh bạch, chứa `[Mã_Đơn_Hàng]`.
+2. **Lời chào:** Trang trọng, cá nhân hóa (`Kính gửi Anh/Chị [Tên_Khách_Hàng],`).
+3. **Thân bài (Giới hạn đúng 3 đoạn văn súc tích, rõ ý):**
+   - *Đoạn 1:* Nhận lỗi trực tiếp về việc đơn hàng `[Mã_Đơn_Hàng]` (sản phẩm: `[Tên_Linh_Kiện]`) bị trễ từ 4 - 6 ngày so với cam kết ban đầu.
+   - *Đoạn 2:* Giải trình thẳng thắn nguyên nhân quá tải hệ thống phân loại tự động tại kho TechShop và chốt thời gian giao hàng mới vào ngày `[Ngày_Giao_Mới]`.
+   - *Đoạn 3:* Trao tặng gói bồi thường thiện chí và hướng dẫn sử dụng quyền lợi.
+4. **Lời cam kết & Chữ ký:** Khẳng định lại cam kết chất lượng dịch vụ từ Trưởng phòng CSKH TechShop.
+5. **Khối thông tin liên hệ khẩn cấp:** Đặt nổi bật ở cuối email.
+
+# EXTRAS (DỮ LIỆU BỔ SUNG BẮT BUỘC ĐƯA VÀO EMAIL)
+- **Thông tin Voucher:** Mã `[MÃ_VOUCHER_15%]` giảm trực tiếp **15%** cho đơn hàng tiếp theo tại TechShop (áp dụng cho mọi linh kiện, không giới hạn giá trị đơn tối thiểu, thời hạn sử dụng 60 ngày kể từ ngày nhận email).
+- **Thông tin Hotline VIP:** Đường dây nóng ưu tiên riêng cho khách hàng bị ảnh hưởng:
